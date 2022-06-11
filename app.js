@@ -8,6 +8,10 @@ app.get('/', function (req, res) {
   res.send(`<h1>Welcome, I'm listening..</h1>`)
 });
 
+app.get('/home', function (req, res) {
+  res.send(`<h1>Welcome to home</h1>`)
+});
+
 app.get('/name/:myname', (req, res) => {
   const myName = req.params.myname
   res.send(`<h1>You entered:  ${myName}</h1>`)
